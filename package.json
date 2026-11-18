@@ -1,0 +1,36 @@
+{
+  "name": "dsh-persona-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "人设工坊：从 B站 的私信、评论、弹幕、推荐流里学说话方式，按学习区隔离产出可移植的人设词（正文 / 字段表 / 纯文本 / SillyTavern 卡），并提供聊天测试区。不做自动改写，只给你能用的东西。",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "lib/",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}

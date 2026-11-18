@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "note": "已知「有人设入口」的 DSH 插件。扫描时按 moduleName 或标题匹配；匹配不上也可以手动写名字。",
+  "targets": [
+    {
+      "match": ["dsh-personality-manager"],
+      "title": "Personality 容器",
+      "where": "输入栏 Personality 下拉框 / ~/.dsh/personalities.json",
+      "accepts": "任意人格设定文本",
+      "kind": "A"
+    },
+    {
+      "match": ["dsh-fish-soul"],
+      "title": "dsh-fish-soul",
+      "where": "设置 → 人格 / persona.json",
+      "accepts": "人格正文、SillyTavern 卡",
+      "kind": "A"
+    },
+    {
+      "match": ["dsh-fish-river"],
+      "title": "大肥鱼（整合版）",
+      "where": "设置 → 数据 → 粘贴交接单",
+      "accepts": "人设正文（1200–1500 字）",
+      "kind": "B"
+    },
+    {
+      "match": ["dsh-fish"],
+      "title": "大肥鱼",
+      "where": "设置 → 数据 → 粘贴交接单",
+      "accepts": "人设正文",
+      "kind": "B"
+    },
+    {
+      "match": ["dsh-bili-whale"],
+      "title": "养鱼（bili-whale）",
+      "where": "设置 → 养鱼 → 她是谁 → persona.md",
+      "accepts": "人设正文",
+      "kind": "A"
+    },
+    {
+      "match": ["dsh-hierarchical-fishmemory"],
+      "title": "属于我们的回忆",
+      "where": "侧栏 → 档案 / soul_update",
+      "accepts": "人设卡",
+      "kind": "A"
+    },
+    {
+      "match": ["dsh-whale-shall-adapt"],
+      "title": "shall（画像/人格）",
+      "where": "控制台 → 人格",
+      "accepts": "人格描述、模仿语料",
+      "kind": "A"
+    },
+    {
+      "match": ["dsh-bili-scroll"],
+      "title": "刷B站",
+      "where": "设置 → 刷B站",
+      "accepts": "无人格入口（仅参考）",
+      "kind": "none"
+    }
+  ]
+}

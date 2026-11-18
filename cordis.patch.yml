@@ -1,0 +1,4 @@
+- insert:
+    - id: persona-lab
+      name: dsh-persona-lab
+      config: {}

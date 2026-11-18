@@ -1,0 +1,8 @@
+.preview/
+node_modules/
+*.log
+.d*.mjs
+.body.json
+.chat.json
+.DS_Store
+Thumbs.db
